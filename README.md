@@ -77,7 +77,7 @@ As you can see, there is eight settings. Now, lets try to learn them:
 	* Can also be removed, by setting this to `transparent` (Which there is no point in, unless you do something really awesome! :D ).
 	* `#ff0000` is default.
 
-====
+
 ## Weird stuff ##
 
 ### Known issues ###
