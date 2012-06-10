@@ -74,7 +74,7 @@ As you can see, there is eight settings. Now, lets try to learn them:
 	* `#000` is default.
 * `slideColor`
 	* Color of the slider.
-	* Can also be removed, by setting this to `transparent` (Which there is no point in, unless you do something really awesome! :D ).
+	* Can also be removed, by setting this to `transparent` (Which there is no point in, unless you do something really awesome!).
 	* `#ff0000` is default.
 
 
