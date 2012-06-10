@@ -2,7 +2,7 @@
  * ScrollBox - Scroll that box!
  * Mads Cordes | Mobilpadde@gmail.com | http://githut.com/Mobilpadde | http://twitter.com/Mobilpadde
  * @author Mads Cordes
- * @version 0.0.3
+ * @version 0.0.4
 **/
 (function($){
 	$.fn.scBox = function(options){
@@ -15,7 +15,7 @@
 			textColor: "#fff",
 			bgColor: "#000",
 			slideColor: "#ff0000",
-			change : function(){ return false; }
+			change: function(i){ return false; }
 		};
 		
 		return this.each(function(){
@@ -75,6 +75,7 @@
 						ctx.fillRect(0,0,i,$opt.height);
 						doText();
 					}
+					$opt.change(i);
 					return false;
 				})
 				
@@ -86,6 +87,7 @@
 					ctx.fillStyle = $opt.slideColor;
 					ctx.fillRect(0,0,i,$opt.height);
 					doText();
+					$opt.change(i);
 				})
 			}else{	
 				ctx.fillStyle = $opt.slideColor;
@@ -111,6 +113,7 @@
 						ctx.fillRect(0,0,$opt.height,($opt.height-i));
 						doText();
 					}
+					$opt.change(i);
 					return false;
 				})
 				
@@ -122,6 +125,7 @@
 					ctx.fillStyle = $opt.bgColor;
 					ctx.fillRect(0,0,$opt.height,($opt.height-i));
 					doText();
+					$opt.change(i);
 				})
 			}
 		})

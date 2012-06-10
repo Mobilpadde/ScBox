@@ -42,6 +42,9 @@ As in every good plugin, there is some settings, that you can play around with:
 				textColor: "#fff",
 				bgColor: "#000",
 				slideColor: "#ff0000",
+				change: function(v){
+					console.log(v);
+				}
 			});
 		})
 	</script>
@@ -76,19 +79,27 @@ As you can see, there is eight settings. Now, lets try to learn them:
 	* Color of the slider.
 	* Can also be removed, by setting this to `transparent` (Which there is no point in, unless you do something really awesome!).
 	* `#ff0000` is default.
+* `change`
+	* Calls a function each time `scBox` is updated.
 
 
 ## Weird stuff ##
 
 ### Known issues ###
-* No way to get output value
+* <strike>No way to get output value</strike> - v 0.0.4
 
 
 ### Changelog ###
+10 06 2012 - v 0.0.4
+
+* Fixed a known issue.
+* Now possible call a function each time `scBox` is updated.
+* Added a new setting `change`.
+
+
 10 06 2012 - v 0.0.3
 
 * Use data- attributes to make individual settings for each `scBox`.
-* Updated `README.md` too
 
 
 10 06 2012 - v 0.0.2
