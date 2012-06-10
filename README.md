@@ -86,7 +86,7 @@ As you can see, there is eight settings. Now, lets try to learn them:
 ## Weird stuff ##
 
 ### Known issues ###
-* <strike>No way to get output value</strike> - v 0.0.4
+* <del>No way to get output value</del> - v 0.0.4
 
 
 ### Changelog ###
