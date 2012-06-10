@@ -88,7 +88,7 @@ As you can see, there is eight settings. Now, lets try to learn them:
 10 06 2012 - v 0.0.3
 
 * Use data- attributes to make individual settings for each `scBox`.
-* Updated README.md
+* Updated `README.md` too
 
 
 10 06 2012 - v 0.0.2
