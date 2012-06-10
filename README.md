@@ -78,8 +78,7 @@ As you can see, there is eight settings. Now, lets try to learn them:
 	* `#ff0000` is default.
 
 
-Weird stuff
-=====
+## Weird stuff ##
 
 ### Known issues ###
 * No way to get output value
