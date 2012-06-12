@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="reset.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	<body>
+		<div id="wapper">
+			<header>
+				<h1>ScBox Demo</h1>
+			</header>
+			<div id="fish">
+				<div id="eye"></div>
+				<div id="mouth"></div>
+				<div id="body">
+					<div id="head"></div>
+					<div id="tail"></div>
+				</div>
+				<div id="talk"></div>
+			</div>
+			<article id="one">
+				<p>Hellow, I'm <span class="fishy">Mrs. Fishy</span> <span class="whisper">Pssst, I'm actually a dude</span>, and I'm your <span class="evil">teacher</span> for today, and the rest of your life.<br />Today we're going to learn about the <span class="awesome">awesome</span> jQuery plugin, called <span class="pluginName">ScBox</span>.<br />Now lets give it a try..!</p>
+			</article>
+			<article></article>
+			<article id="two">
+				<p>First, if you havn't read the <a href="https://github.com/Mobilpadde/ScBox#scbox" target="_blank">readme</a>, go do that! It's <span class="uber">über</span> important!</p>
+			</article>
+			<article></article>
+			<article id="three">
+				<p>Once you've completed the <a href="https://github.com/Mobilpadde/ScBox#how-to">How to</a>, you'll see an <span class="awesome">awesome</span> box <span class="whisper">Which you can scroll in</span>, like the one <span class="right">there</span> <span class="scbox"></span>, ofcause we havn't done any settings to it, so it's just a stupid scrolling box.</p>
+			</article>
+			<article></article>
+			<article id="four">
+				<p>Now, let us make one with a output <span class="whisper">And no text</span>. <span class="code">40</span><br /><span class="scbox-w-function" data-width="300" data-textColor="transparent"></span></p>
+				<p>Pretty neat eh?</p>
+			</article>
+			<article></article>
+			<article id="five">
+				<p>Know what?</p>
+				<p>We should make some zooming with this!</p>
+				<br />
+				<p>First a <span class="pluginName">ScBox</span>, with a box to zoom in.</p>
+				<div class="scbox-w-zoom"></div>
+				<div class="zoombox">
+					<div class="red"></div>
+					<div class="red"></div>
+					<div class="red"></div>
+					<div class="red"></div>
+				</div>
+				<div class="clear"></div>
+				<p>Now you can see why <span class="pluginName">ScBox</span> is really <span class="awesome">awesome</span></p>
+			</article>
+		</div>
+		<!--<div id="bee">
+			<div id="left" class="eye"></div>
+			<div id="right" class="eye"></div>
+			<div id="body"></div>
+			<div id="wings"></div>
+			<div id="sting"></div>
+		</div>-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("#fish").css({"left":($("#wapper")[0].offsetLeft-190)+"px"});
+			$(window).resize(function(){
+				$("#fish").css({"left":($("#wapper")[0].offsetLeft-190)+"px"});
+			})
+		</script>
+		<script type="text/javascript" src="https://raw.github.com/Mobilpadde/ScBox/master/scBox.jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".scbox").scBox();
+				$(".scbox-w-function").scBox({
+					change: function(v){
+						$("#four .code").text(v);
+					}
+				});
+				$(".scbox-w-zoom").scBox({
+					width: 50,
+					height: 200,
+					start: 200,
+					change: function(v){
+						var percent = (v*100/200);
+						$("article#five .zoombox .red").css({"zoom":percent+"%"});
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

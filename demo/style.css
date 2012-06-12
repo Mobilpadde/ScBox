@@ -1,0 +1,186 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+* a, * a:visited{
+	color: #63A52A;
+	-webkit-transition: color ease-in-out 0.3s;
+	-moz-transition: color ease-in-out 0.3s;
+	-ms-transition: color ease-in-out 0.3s;
+	-o-transition: color ease-in-out 0.3s;
+	transition: color ease-in-out 0.3s;
+	text-decoration: none;
+}
+* a:hover{
+	text-decoration: underline;
+	color: #90D355;
+}
+#fish{
+	position: fixed;
+	top: 120px;
+	left: 0;
+	width: 300px;
+	height: 165px;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(45deg);
+}
+#fish *{
+	position: absolute;
+}
+#fish #mouth{
+	width: 0;
+	height: 0;  border-top: 10px solid transparent;  border-bottom: 10px solid transparent;    
+	border-right: 10px solid #fff;
+	left: 90px;
+	top: 19px;
+	z-index: 1;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(1deg);
+}
+#fish #eye{
+	width: 15px;
+	height: 15px;
+	background: #389DB8;
+	border: 6px solid white;
+	border-radius: 15px;
+	z-index: 1;
+	top: 17px;
+	left: 40px;
+}
+#fish #body{
+
+}
+#fish #body #head{
+	width: 100px;
+	height: 100px;
+	background: #44BCDA;
+	border-radius: 70px 0px;
+}
+#fish #body #tail{
+	width: 0; 
+	height: 0;  
+	border-top: 40px solid transparent;  
+	border-bottom: 40px solid transparent;   
+	border-left: 40px solid #44BCDA;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(-45deg);
+	left: -24px;
+	top: 64px;
+}
+#fish #talk{
+	width: 0;  
+	height: 0;  
+	border-top: 10px solid transparent;  
+	border-bottom: 10px solid transparent;    
+	border-right: 10px solid #fff;
+	-webkit-transform: rotate(-44deg);
+	left: 118px;
+	top: -5px;
+}
+html, body{
+	height: 100%;
+}
+body{
+	background: url("http://noisepng.com/100-90-5.png") rgb(237, 196, 53);
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 15px;
+}
+header{
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Georgia, serif;
+	text-align: center;
+	color: #000;
+	line-height: 90px;
+}
+#wapper{
+	margin: auto auto;
+	width: 675px;
+	background: #fff;
+	min-height: 100%;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+	position: relative;
+}
+article#one{
+	border-top: 1px solid rgba(51, 51, 51, .2);
+}
+article{
+	border-bottom: 1px solid rgba(51, 51, 51, .2);
+	padding: 30px 15px;
+	line-height: 25px;
+}
+article .fishy{
+	color: #44BCDA;
+	font-weight: bold;
+}
+article .whisper{
+	color: rgba(0, 0, 0, .3);
+	font-size: 0.7em;
+	font-style: italic;
+}
+article .whisper:before{
+	content: "(";
+}
+article .whisper:after{
+	content: ")";
+}
+article .awesome{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #dd0000,
+				 0 2px 0 #fe6230,
+				 0 3px 0 #fef600,
+				 0 4px 0 #00bc00,
+				 0 5px 0 #009bfe,
+				 0 6px 0 #000083,
+				 0 7px 0 #30009b;
+	position: relative;
+	top: -7px;
+}
+article .jquery{
+	
+}
+article .pluginName{
+	font-size: 20px;
+}
+article .code{
+	background: #3B3B3B;
+	color: #fff;
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+article .uber{
+	color: fuchsia;
+}
+article .below:after{
+	content: " ↓";
+}
+article .right:after{
+	content: " →";
+}
+article .scbox{
+	display: inline;
+}
+article#five .scbox-w-zoom{
+	float: left;
+}
+article#five .zoombox{
+	float: right;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #333;
+}
+article#five .zoombox .red{
+	width: 70px;
+	height: 70px;
+	margin: 15px;
+	float: left;
+	background: red;
+	
+}
+.clear{
+	clear: both;
+}

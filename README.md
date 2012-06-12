@@ -1,10 +1,10 @@
 Scbox
 =====
 
-A plugin to make a box which you can scroll inside (May sound a little weird, but try the demo) :D
+A plugin to make a box which you can scroll inside (May sound a little weird, but try the [demo](http://sloganator.org/ScBox/)) :D
 
 ## How to ##
-First step is always to include the script it self (Either minified, or *human-readable* version).
+First step is always to include the script it self ([Either minified](https://github.com/Mobilpadde/ScBox/blob/master/scBox.jquery.min.js), or [*human-readable*](https://github.com/Mobilpadde/ScBox/blob/master/scBox.jquery.js) version).
 
 ```html
 	<script src="scBox.jquery.min.js"></script>
